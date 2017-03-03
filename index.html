@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <title>Gathering Input</title>
+    <script>
+      function getName(){
+        var fullName;
+        var lastName;
+        fullName = document.getElementById("first").value;
+        lastName = document.getElementById("last").value;
+        document.getElementById("message").innerHTML = fullName+" "+lastName;
+        //document.getElementById("message")
+      }
+    </script>
+  </head>
+  <body>
+    <form action="/action_page.php">
+    <input type="text"  id="first" value="First Name">
+    <input type="text" id="last" value="Last Name">
+    
+    </form>
+    <button type="button" id="doneButton" onclick="getName();">Done</button>
+    <p id="message"></p>
+  </body>
+</html>
